@@ -14,6 +14,17 @@
         background-color: gray;
         padding: 10px;
         color: white;
+        display: flex;
+      }
+
+      header * {
+        flex: 1;
+      }
+
+      header a {
+        text-align: right;
+        color: red;
+        font-weight: bold;
       }
 
       section {
@@ -48,15 +59,33 @@
   <body>
     <header>
       <h1>Agile Comparison</h1>
+      <a href="https://share.octopus.energy/sunny-pup-744">Click here for £50 credit when you switch</a>
     </header>
 
     <section class="Input">
       <ol>
         <li>Upload your usage <input type="file" name="csv" /></li>
+        <li>Select your region
+          <select name="region">
+            <option value="B">East Midlands</option>
+            <option value="A">Eastern England</option>
+            <option value="C">London</option>
+            <option value="D">Merseyside &amp; Northern Wales</option>
+            <option value="F">North Eastern England</option>
+            <option value="G">North Western England</option>
+            <option value="P">Northern Scotland</option>
+            <option value="J">South Eastern England</option>
+            <option value="L">South Western England</option>
+            <option value="H">Southern England</option>
+            <option value="N">Southern Scotland</option>
+            <option value="K">Southern Wales</option>
+            <option value="M">Yorkshire</option>
+          </select>
+        </li>
         <li>
           <div>
-            <div class="rates"><span class="rates-text">Enter kWh Rate</span> <input type="number" name="rate" /></div>
-            <div class="rates"><span class="rates-text">Enter standing charge</span> <input type="number" name="standing_charge" /></div>
+            <div class="rates"><span class="rates-text">Enter kWh Rate</span> <input type="number" name="rate" value="15" step="1" /></div>
+            <div class="rates"><span class="rates-text">Enter standing charge</span> <input type="number" name="standing_charge" value="20" step="1" /></div>
           </div>
         </li>
         <li><button id="calculate">Calculate</button></lI>
