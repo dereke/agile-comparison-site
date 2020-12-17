@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-GB">
+  <head>
+    <title>Agile Comparison - Compare your energy usage against octopus agile prices</title>
+    <meta type="og:description" content="Compare your energy usage against octopus agile prices">
+    <meta charset="utf-8">
+    <script src="dist/main.js"></script>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      header {
+        background-color: gray;
+        padding: 10px;
+        color: white;
+      }
+
+      section {
+        margin: auto;
+        max-width: 640px;
+        background-color: whitesmoke;
+        padding: 20px;
+      }
+
+      section li {
+        padding: 5px;
+      }
+
+      .rates {
+        display: flex;
+      }
+
+      .rates-text {
+        flex: 1;
+      }
+
+      .Results {
+         display: none;
+      }
+
+      .active {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Agile Comparison</h1>
+    </header>
+
+    <section class="Input">
+      <ol>
+        <li>Upload your usage <input type="file" name="csv" /></li>
+        <li>
+          <div>
+            <div class="rates"><span class="rates-text">Enter kWh Rate</span> <input type="number" name="rate" /></div>
+            <div class="rates"><span class="rates-text">Enter standing charge</span> <input type="number" name="standing_charge" /></div>
+          </div>
+        </li>
+        <li><button id="calculate">Calculate</button></lI>
+      </ol>
+    </section>
+
+    <section class="Results">
+      <div><span data-content="from"></span> to <span data-content="to"></span></div>
+      <div><span>Total Usage</span> <span data-content="total-usage"></span>kWh</div>
+      <div><span>Cost with current supplier</span> <span data-content="current-supplier-cost"></span></div>
+      <div><span>Cost with Octopus Agile</span> <span data-content="octopus-agile-cost"></span></div>
+    </section>
+  </body>
+</html>
