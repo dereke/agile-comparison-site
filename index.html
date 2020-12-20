@@ -4,6 +4,18 @@
     <title>Agile Comparison - Compare your energy usage against octopus agile prices</title>
     <meta type="og:description" content="Compare your energy usage against octopus agile prices">
     <meta charset="utf-8">
+  </head>
+  <body>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <title>OVO Energy Usage Downloader</title>
+    <meta type="og:description" content="Download your usage from OVO as a CSV">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/tailwind.css" rel="stylesheet">
     <script src="dist/main.js"></script>
     <style>
       body {
@@ -57,46 +69,94 @@
     </style>
   </head>
   <body>
-    <header>
-      <h1>Agile Comparison</h1>
-      <a href="https://share.octopus.energy/sunny-pup-744">Click here for £50 credit when you switch</a>
-    </header>
+    <div>
+      <nav class="bg-gray-800">
+        <div class="mx-auto px-4">
+          <div class="flex flex-col items-center md:flex-row p-2">
+            <a href="https://ovo-usage.agilecomparison.com" class="flex-1 md:m-2 text-center text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Download OVO Energy Usage</a>
+            <a href="https://agilecomparison.com" class="flex-1 md:m-2 text-center bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Octopus Agile Calculator</a>
 
-    <section class="Input">
-      <ol>
-        <li>Upload your usage <input type="file" name="csv" /></li>
-        <li>Select your region
-          <select name="region">
-            <option value="B">East Midlands</option>
-            <option value="A">Eastern England</option>
-            <option value="C">London</option>
-            <option value="D">Merseyside &amp; Northern Wales</option>
-            <option value="F">North Eastern England</option>
-            <option value="G">North Western England</option>
-            <option value="P">Northern Scotland</option>
-            <option value="J">South Eastern England</option>
-            <option value="L">South Western England</option>
-            <option value="H">Southern England</option>
-            <option value="N">Southern Scotland</option>
-            <option value="K">Southern Wales</option>
-            <option value="M">Yorkshire</option>
-          </select>
-        </li>
-        <li>
-          <div>
-            <div class="rates"><span class="rates-text">Enter kWh Rate</span> <input type="number" name="rate" value="15" step="1" /></div>
-            <div class="rates"><span class="rates-text">Enter standing charge</span> <input type="number" name="standing_charge" value="20" step="1" /></div>
+            <a href="https://share.octopus.energy/sunny-pup-744" class="flex-1 md:m-2 text-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Click here for £50 credit when you switch</a>                                                                                                       
           </div>
-        </li>
-        <li><button id="calculate">Calculate</button></lI>
-      </ol>
-    </section>
+        </div>
+      </nav>
 
-    <section class="Results">
-      <div><span data-content="from"></span> to <span data-content="to"></span></div>
-      <div><span>Total Usage</span> <span data-content="total-usage"></span>kWh</div>
-      <div><span>Cost with current supplier</span> <span data-content="current-supplier-cost"></span></div>
-      <div><span>Cost with Octopus Agile</span> <span data-content="octopus-agile-cost"></span></div>
-    </section>
+      <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold leading-tight text-gray-900">
+            Agile Price Comparison
+          </h1>
+        </div>
+      </header>
+      <main>
+        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+
+          <section class="Input">
+            <ol class="list-decimal p-4">
+              <li>
+
+                <div class="flex-col md:flex-row">
+                  <label for="file" class="flex-1">Upload your usage</label>
+                  <div class="inline-block relative flex-auto">
+                    <input type="file" name="csv" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="flex-col md:flex-row">
+                  <label for="region" class="flex-1">Select your region</label>
+                  <div class="inline-block relative flex-auto">
+                    <select id="region" name="region" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                      <option value="B">East Midlands</option>
+                      <option value="A">Eastern England</option>
+                      <option value="C">London</option>
+                      <option value="D">Merseyside &amp; Northern Wales</option>
+                      <option value="F">North Eastern England</option>
+                      <option value="G">North Western England</option>
+                      <option value="P">Northern Scotland</option>
+                      <option value="J">South Eastern England</option>
+                      <option value="L">South Western England</option>
+                      <option value="H">Southern England</option>
+                      <option value="N">Southern Scotland</option>
+                      <option value="K">Southern Wales</option>
+                      <option value="M">Yorkshire</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="flex flex-col md:flex-row">
+                  <label for="rate" class="flex-1">Enter your current kWh Rate</label>
+                  <label class="flex-auto input-field inline-flex items-baseline border-none shadow-md bg-white p-3 rounded-md shadow-sm">
+                    <div class="flex-1 leading-none">
+                      <input id="rate" type="text" class="placeholder-blue w-full p-0 no-outline text-right text-dusty-blue-darker" name="rate" value="15" placeholder="your current per kWh rate in pennies">
+                    </div>
+                    <span class="flex-none text-dusty-blue-darker select-none leading-none">p</span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                  <button id="calculate" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Calculate
+                  </button>
+                </div>
+                </lI>
+            </ol>
+          </section>
+
+          <section class="Results">
+            <div><span data-content="from"></span> to <span data-content="to"></span></div>
+            <div><span>Total Usage</span> <span data-content="total-usage"></span>kWh</div>
+            <div><span>Cost with current supplier</span> <span data-content="current-supplier-cost"></span></div>
+            <div><span>Cost with Octopus Agile</span> <span data-content="octopus-agile-cost"></span></div>
+          </section>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
