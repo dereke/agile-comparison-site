@@ -18,27 +18,6 @@
     <link href="/tailwind.css" rel="stylesheet">
     <script src="dist/main.js"></script>
     <style>
-      body {
-        margin: 0;
-      }
-
-      header {
-        background-color: gray;
-        padding: 10px;
-        color: white;
-        display: flex;
-      }
-
-      header * {
-        flex: 1;
-      }
-
-      header a {
-        text-align: right;
-        color: red;
-        font-weight: bold;
-      }
-
       section {
         margin: auto;
         max-width: 640px;
@@ -48,14 +27,6 @@
 
       section li {
         padding: 5px;
-      }
-
-      .rates {
-        display: flex;
-      }
-
-      .rates-text {
-        flex: 1;
       }
 
       .Results {
@@ -76,7 +47,7 @@
             <a href="https://ovo-usage.agilecomparison.com" class="flex-1 md:m-2 text-center text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Download OVO Energy Usage</a>
             <a href="https://agilecomparison.com" class="flex-1 md:m-2 text-center bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Octopus Agile Calculator</a>
 
-            <a href="https://share.octopus.energy/sunny-pup-744" class="flex-1 md:m-2 text-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Click here for £50 credit when you switch</a>                                                                                                       
+            <a href="https://share.octopus.energy/sunny-pup-744" class="flex-1 md:m-2 text-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Click here for a £50 credit when you switch</a>
           </div>
         </div>
       </nav>
@@ -95,18 +66,18 @@
             <ol class="list-decimal p-4">
               <li>
 
-                <div class="flex-col md:flex-row">
-                  <label for="file" class="flex-1">Upload your usage</label>
-                  <div class="inline-block relative flex-auto">
+                <div class="flex flex-col md:flex-row">
+                  <label for="file" class="md:w-1/3">Upload your usage</label>
+                  <div class="inline-block relative md:w-2/3">
                     <input type="file" name="csv" />
                   </div>
                 </div>
               </li>
 
               <li>
-                <div class="flex-col md:flex-row">
-                  <label for="region" class="flex-1">Select your region</label>
-                  <div class="inline-block relative flex-auto">
+                <div class="flex flex-col md:flex-row">
+                  <label for="region" class="md:w-1/3">Select your region</label>
+                  <div class="inline-block relative md:w-2/3">
                     <select id="region" name="region" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                       <option value="B">East Midlands</option>
                       <option value="A">Eastern England</option>
@@ -130,8 +101,8 @@
               </li>
               <li>
                 <div class="flex flex-col md:flex-row">
-                  <label for="rate" class="flex-1">Enter your current kWh Rate</label>
-                  <label class="flex-auto input-field inline-flex items-baseline border-none shadow-md bg-white p-3 rounded-md shadow-sm">
+                  <label for="rate" class="md:w-1/3">Enter your current kWh Rate</label>
+                  <label class="md:w-2/3 input-field inline-flex items-baseline border-none shadow-md bg-white p-3 rounded-md shadow-sm">
                     <div class="flex-1 leading-none">
                       <input id="rate" type="text" class="placeholder-blue w-full p-0 no-outline text-right text-dusty-blue-darker" name="rate" value="15" placeholder="your current per kWh rate in pennies">
                     </div>
@@ -139,21 +110,25 @@
                   </label>
                 </div>
               </li>
-              <li>
-                <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                  <button id="calculate" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    Calculate
-                  </button>
-                </div>
-                </lI>
             </ol>
+            <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+              <button id="calculate" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Calculate
+              </button>
+            </div>
           </section>
 
-          <section class="Results">
-            <div><span data-content="from"></span> to <span data-content="to"></span></div>
-            <div><span>Total Usage</span> <span data-content="total-usage"></span>kWh</div>
-            <div><span>Cost with current supplier</span> <span data-content="current-supplier-cost"></span></div>
-            <div><span>Cost with Octopus Agile</span> <span data-content="octopus-agile-cost"></span></div>
+          <section class="Results p-4 bg-gray-50 text-center sm:px-6">
+            <h2 class="font-black text-4xl">Results</h2>
+            <div class="p-4 text-center"><span data-content="from" class="font-bold font-3xl"></span> to <span data-content="to" class="font-bold font-3xl"></span></div>
+            <div class="p-1"><span>Total Usage</span> <span data-content="total-usage" class="font-bold"></span><span class="font-bold">kWh</span></div>
+            <div class="pl-1 pr-1"><span>Cost with current supplier</span> <span class="font-bold text-red-700">£<span data-content="current-supplier-cost"></span></span></div>
+            <div class="pl-1 pr-1"><span>Cost with Octopus Agile</span> <span class="font-bold text-green-700">£<span data-content="octopus-agile-cost"></span></span></div>
+
+            <div>
+              <div class="p-1 pb-4 pt-4 italic">You would have saved <span class="font-bold text-green-700">£<span data-content="octopus-agile-saving"></span></span> if you were on Octopus Agile</div>
+              <a href="https://share.octopus.energy/sunny-pup-744" class="flex-1 md:m-2 text-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Click here for a £50 credit when you switch</a>
+            </div>
           </section>
         </div>
       </main>
