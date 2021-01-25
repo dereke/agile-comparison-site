@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <title>Agile Comparison - Compare your energy usage against octopus agile prices</title>
+    <meta type="og:description" content="Compare your energy usage against octopus agile prices">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/tailwind.css" rel="stylesheet">
+    <script src="dist/main.js"></script>
+    <style>
+      section {
+        margin: auto;
+        max-width: 640px;
+        background-color: whitesmoke;
+        padding: 20px;
+      }
+
+      section li {
+        padding: 5px;
+      }
+
+      .Results, .Errors, .CSVPreview {
+        display: none;
+      }
+
+      .active {
+        display: block;
+      }
+
+    </style>
+    <script async defer data-domain="agilecomparison.com" src="https://plausible.io/js/plausible.js"></script>
+
+  </head>
+  <body>
+    <div>
+      <nav class="bg-gray-800">
+        <div class="mx-auto px-4">
+          <div class="flex flex-col items-center md:flex-row p-2">
+            <a href="https://agilecomparison.com" class="flex-1 md:m-2 text-center bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Octopus Agile Calculator</a>
+            <a href="/prices" class="flex-1 md:m-2 text-center text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Current Prices</a>
+
+            <a href="https://share.octopus.energy/sunny-pup-744" class="flex-1 md:m-2 text-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Click here for a £50 credit when you switch</a>
+          </div>
+        </div>
+      </nav>
+
+      <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold leading-tight text-gray-900">
+            Agile Prices
+          </h1>
+        </div>
+      </header>
+      <main>
+        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+          <section class="p-4 bg-gray-50 text-center sm:px-6">
+            <a href="/prices/B" class="block p hover:underline">East Midlands</a>
+            <a href="/prices/A" class="block p hover:underline">Eastern England</a>
+            <a href="/prices/C" class="block p hover:underline">London</a>
+            <a href="/prices/D" class="block p hover:underline">Merseyside &amp; Northern Wales</a>
+            <a href="/prices/F" class="block p hover:underline">North Eastern England</a>
+            <a href="/prices/G" class="block p hover:underline">North Western England</a>
+            <a href="/prices/P" class="block p hover:underline">Northern Scotland</a>
+            <a href="/prices/J" class="block p hover:underline">South Eastern England</a>
+            <a href="/prices/L" class="block p hover:underline">South Western England</a>
+            <a href="/prices/H" class="block p hover:underline">Southern England</a>
+            <a href="/prices/N" class="block p hover:underline">Southern Scotland</a>
+            <a href="/prices/K" class="block p hover:underline">Southern Wales</a>
+            <a href="/prices/E" class="block p hover:underline">West Midlands</a>
+            <a href="/prices/M" class="block p hover:underline">Yorkshire</a>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
