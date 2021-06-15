@@ -56046,7 +56046,7 @@
     "valid_to": "2018-06-20T10:00:00Z"
   },
   "2018-06-20T09:00:00Z": {
-    "value_exc_vat": 10,
+    "value_exc_vat": 7.623,
     "value_inc_vat": 10.5,
     "valid_from": "2018-06-20T09:00:00Z",
     "valid_to": "2018-06-20T09:30:00Z"
