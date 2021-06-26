@@ -50950,5 +50950,293 @@
     "value_inc_vat": 17.22,
     "valid_from": "2021-06-25T22:00:00Z",
     "valid_to": "2021-06-25T22:30:00Z"
+  },
+  "2021-06-27T21:30:00Z": {
+    "value_exc_vat": 14,
+    "value_inc_vat": 14.7,
+    "valid_from": "2021-06-27T21:30:00Z",
+    "valid_to": "2021-06-27T22:00:00Z"
+  },
+  "2021-06-27T21:00:00Z": {
+    "value_exc_vat": 16.44,
+    "value_inc_vat": 17.262,
+    "valid_from": "2021-06-27T21:00:00Z",
+    "valid_to": "2021-06-27T21:30:00Z"
+  },
+  "2021-06-27T20:30:00Z": {
+    "value_exc_vat": 15.28,
+    "value_inc_vat": 16.044,
+    "valid_from": "2021-06-27T20:30:00Z",
+    "valid_to": "2021-06-27T21:00:00Z"
+  },
+  "2021-06-27T20:00:00Z": {
+    "value_exc_vat": 17.6,
+    "value_inc_vat": 18.48,
+    "valid_from": "2021-06-27T20:00:00Z",
+    "valid_to": "2021-06-27T20:30:00Z"
+  },
+  "2021-06-27T19:30:00Z": {
+    "value_exc_vat": 17.7,
+    "value_inc_vat": 18.585,
+    "valid_from": "2021-06-27T19:30:00Z",
+    "valid_to": "2021-06-27T20:00:00Z"
+  },
+  "2021-06-27T19:00:00Z": {
+    "value_exc_vat": 19.4,
+    "value_inc_vat": 20.37,
+    "valid_from": "2021-06-27T19:00:00Z",
+    "valid_to": "2021-06-27T19:30:00Z"
+  },
+  "2021-06-27T18:30:00Z": {
+    "value_exc_vat": 20.44,
+    "value_inc_vat": 21.462,
+    "valid_from": "2021-06-27T18:30:00Z",
+    "valid_to": "2021-06-27T19:00:00Z"
+  },
+  "2021-06-27T18:00:00Z": {
+    "value_exc_vat": 21,
+    "value_inc_vat": 22.05,
+    "valid_from": "2021-06-27T18:00:00Z",
+    "valid_to": "2021-06-27T18:30:00Z"
+  },
+  "2021-06-27T17:30:00Z": {
+    "value_exc_vat": 33.33,
+    "value_inc_vat": 34.9965,
+    "valid_from": "2021-06-27T17:30:00Z",
+    "valid_to": "2021-06-27T18:00:00Z"
+  },
+  "2021-06-27T17:00:00Z": {
+    "value_exc_vat": 33.33,
+    "value_inc_vat": 34.9965,
+    "valid_from": "2021-06-27T17:00:00Z",
+    "valid_to": "2021-06-27T17:30:00Z"
+  },
+  "2021-06-27T16:30:00Z": {
+    "value_exc_vat": 33.33,
+    "value_inc_vat": 34.9965,
+    "valid_from": "2021-06-27T16:30:00Z",
+    "valid_to": "2021-06-27T17:00:00Z"
+  },
+  "2021-06-27T16:00:00Z": {
+    "value_exc_vat": 33.33,
+    "value_inc_vat": 34.9965,
+    "valid_from": "2021-06-27T16:00:00Z",
+    "valid_to": "2021-06-27T16:30:00Z"
+  },
+  "2021-06-27T15:30:00Z": {
+    "value_exc_vat": 32.96,
+    "value_inc_vat": 34.608,
+    "valid_from": "2021-06-27T15:30:00Z",
+    "valid_to": "2021-06-27T16:00:00Z"
+  },
+  "2021-06-27T15:00:00Z": {
+    "value_exc_vat": 29.28,
+    "value_inc_vat": 30.744,
+    "valid_from": "2021-06-27T15:00:00Z",
+    "valid_to": "2021-06-27T15:30:00Z"
+  },
+  "2021-06-27T14:30:00Z": {
+    "value_exc_vat": 15.28,
+    "value_inc_vat": 16.044,
+    "valid_from": "2021-06-27T14:30:00Z",
+    "valid_to": "2021-06-27T15:00:00Z"
+  },
+  "2021-06-27T14:00:00Z": {
+    "value_exc_vat": 14.24,
+    "value_inc_vat": 14.952,
+    "valid_from": "2021-06-27T14:00:00Z",
+    "valid_to": "2021-06-27T14:30:00Z"
+  },
+  "2021-06-27T13:30:00Z": {
+    "value_exc_vat": 15.08,
+    "value_inc_vat": 15.834,
+    "valid_from": "2021-06-27T13:30:00Z",
+    "valid_to": "2021-06-27T14:00:00Z"
+  },
+  "2021-06-27T13:00:00Z": {
+    "value_exc_vat": 15.28,
+    "value_inc_vat": 16.044,
+    "valid_from": "2021-06-27T13:00:00Z",
+    "valid_to": "2021-06-27T13:30:00Z"
+  },
+  "2021-06-27T12:30:00Z": {
+    "value_exc_vat": 15.36,
+    "value_inc_vat": 16.128,
+    "valid_from": "2021-06-27T12:30:00Z",
+    "valid_to": "2021-06-27T13:00:00Z"
+  },
+  "2021-06-27T12:00:00Z": {
+    "value_exc_vat": 17.02,
+    "value_inc_vat": 17.871,
+    "valid_from": "2021-06-27T12:00:00Z",
+    "valid_to": "2021-06-27T12:30:00Z"
+  },
+  "2021-06-27T11:30:00Z": {
+    "value_exc_vat": 18.56,
+    "value_inc_vat": 19.488,
+    "valid_from": "2021-06-27T11:30:00Z",
+    "valid_to": "2021-06-27T12:00:00Z"
+  },
+  "2021-06-27T11:00:00Z": {
+    "value_exc_vat": 18.6,
+    "value_inc_vat": 19.53,
+    "valid_from": "2021-06-27T11:00:00Z",
+    "valid_to": "2021-06-27T11:30:00Z"
+  },
+  "2021-06-27T10:30:00Z": {
+    "value_exc_vat": 18.4,
+    "value_inc_vat": 19.32,
+    "valid_from": "2021-06-27T10:30:00Z",
+    "valid_to": "2021-06-27T11:00:00Z"
+  },
+  "2021-06-27T10:00:00Z": {
+    "value_exc_vat": 18.2,
+    "value_inc_vat": 19.11,
+    "valid_from": "2021-06-27T10:00:00Z",
+    "valid_to": "2021-06-27T10:30:00Z"
+  },
+  "2021-06-27T09:30:00Z": {
+    "value_exc_vat": 17.2,
+    "value_inc_vat": 18.06,
+    "valid_from": "2021-06-27T09:30:00Z",
+    "valid_to": "2021-06-27T10:00:00Z"
+  },
+  "2021-06-27T09:00:00Z": {
+    "value_exc_vat": 17.2,
+    "value_inc_vat": 18.06,
+    "valid_from": "2021-06-27T09:00:00Z",
+    "valid_to": "2021-06-27T09:30:00Z"
+  },
+  "2021-06-27T08:30:00Z": {
+    "value_exc_vat": 16.36,
+    "value_inc_vat": 17.178,
+    "valid_from": "2021-06-27T08:30:00Z",
+    "valid_to": "2021-06-27T09:00:00Z"
+  },
+  "2021-06-27T08:00:00Z": {
+    "value_exc_vat": 16,
+    "value_inc_vat": 16.8,
+    "valid_from": "2021-06-27T08:00:00Z",
+    "valid_to": "2021-06-27T08:30:00Z"
+  },
+  "2021-06-27T07:30:00Z": {
+    "value_exc_vat": 15.52,
+    "value_inc_vat": 16.296,
+    "valid_from": "2021-06-27T07:30:00Z",
+    "valid_to": "2021-06-27T08:00:00Z"
+  },
+  "2021-06-27T07:00:00Z": {
+    "value_exc_vat": 15.28,
+    "value_inc_vat": 16.044,
+    "valid_from": "2021-06-27T07:00:00Z",
+    "valid_to": "2021-06-27T07:30:00Z"
+  },
+  "2021-06-27T06:30:00Z": {
+    "value_exc_vat": 14.2,
+    "value_inc_vat": 14.91,
+    "valid_from": "2021-06-27T06:30:00Z",
+    "valid_to": "2021-06-27T07:00:00Z"
+  },
+  "2021-06-27T06:00:00Z": {
+    "value_exc_vat": 13.4,
+    "value_inc_vat": 14.07,
+    "valid_from": "2021-06-27T06:00:00Z",
+    "valid_to": "2021-06-27T06:30:00Z"
+  },
+  "2021-06-27T05:30:00Z": {
+    "value_exc_vat": 14.28,
+    "value_inc_vat": 14.994,
+    "valid_from": "2021-06-27T05:30:00Z",
+    "valid_to": "2021-06-27T06:00:00Z"
+  },
+  "2021-06-27T05:00:00Z": {
+    "value_exc_vat": 14.12,
+    "value_inc_vat": 14.826,
+    "valid_from": "2021-06-27T05:00:00Z",
+    "valid_to": "2021-06-27T05:30:00Z"
+  },
+  "2021-06-27T04:30:00Z": {
+    "value_exc_vat": 14,
+    "value_inc_vat": 14.7,
+    "valid_from": "2021-06-27T04:30:00Z",
+    "valid_to": "2021-06-27T05:00:00Z"
+  },
+  "2021-06-27T04:00:00Z": {
+    "value_exc_vat": 13.74,
+    "value_inc_vat": 14.427,
+    "valid_from": "2021-06-27T04:00:00Z",
+    "valid_to": "2021-06-27T04:30:00Z"
+  },
+  "2021-06-27T03:30:00Z": {
+    "value_exc_vat": 14,
+    "value_inc_vat": 14.7,
+    "valid_from": "2021-06-27T03:30:00Z",
+    "valid_to": "2021-06-27T04:00:00Z"
+  },
+  "2021-06-27T03:00:00Z": {
+    "value_exc_vat": 14.2,
+    "value_inc_vat": 14.91,
+    "valid_from": "2021-06-27T03:00:00Z",
+    "valid_to": "2021-06-27T03:30:00Z"
+  },
+  "2021-06-27T02:30:00Z": {
+    "value_exc_vat": 14.3,
+    "value_inc_vat": 15.015,
+    "valid_from": "2021-06-27T02:30:00Z",
+    "valid_to": "2021-06-27T03:00:00Z"
+  },
+  "2021-06-27T02:00:00Z": {
+    "value_exc_vat": 14.58,
+    "value_inc_vat": 15.309,
+    "valid_from": "2021-06-27T02:00:00Z",
+    "valid_to": "2021-06-27T02:30:00Z"
+  },
+  "2021-06-27T01:30:00Z": {
+    "value_exc_vat": 14.08,
+    "value_inc_vat": 14.784,
+    "valid_from": "2021-06-27T01:30:00Z",
+    "valid_to": "2021-06-27T02:00:00Z"
+  },
+  "2021-06-27T01:00:00Z": {
+    "value_exc_vat": 15,
+    "value_inc_vat": 15.75,
+    "valid_from": "2021-06-27T01:00:00Z",
+    "valid_to": "2021-06-27T01:30:00Z"
+  },
+  "2021-06-27T00:30:00Z": {
+    "value_exc_vat": 14.6,
+    "value_inc_vat": 15.33,
+    "valid_from": "2021-06-27T00:30:00Z",
+    "valid_to": "2021-06-27T01:00:00Z"
+  },
+  "2021-06-27T00:00:00Z": {
+    "value_exc_vat": 15.66,
+    "value_inc_vat": 16.443,
+    "valid_from": "2021-06-27T00:00:00Z",
+    "valid_to": "2021-06-27T00:30:00Z"
+  },
+  "2021-06-26T23:30:00Z": {
+    "value_exc_vat": 15.8,
+    "value_inc_vat": 16.59,
+    "valid_from": "2021-06-26T23:30:00Z",
+    "valid_to": "2021-06-27T00:00:00Z"
+  },
+  "2021-06-26T23:00:00Z": {
+    "value_exc_vat": 16,
+    "value_inc_vat": 16.8,
+    "valid_from": "2021-06-26T23:00:00Z",
+    "valid_to": "2021-06-26T23:30:00Z"
+  },
+  "2021-06-26T22:30:00Z": {
+    "value_exc_vat": 18.5,
+    "value_inc_vat": 19.425,
+    "valid_from": "2021-06-26T22:30:00Z",
+    "valid_to": "2021-06-26T23:00:00Z"
+  },
+  "2021-06-26T22:00:00Z": {
+    "value_exc_vat": 18.8,
+    "value_inc_vat": 19.74,
+    "valid_from": "2021-06-26T22:00:00Z",
+    "valid_to": "2021-06-26T22:30:00Z"
   }
 }
